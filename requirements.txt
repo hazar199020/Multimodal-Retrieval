@@ -1,0 +1,11 @@
+langchain-core==1.2.5
+numpy==2.4.0
+transformers==4.57.3
+torch==2.9.0
+Pillow==11.3.0
+langchain==1.2.0
+faiss-cpu==1.13.2
+PIL==11.3.0
+langchain_community==0.4
+hf_xet==1.2.0
+torchvision==0.24.1
