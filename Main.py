@@ -22,6 +22,7 @@ class CLIPEmbeddings(Embeddings):
         embs = self.model.get_text_features(**inputs)
         #To make retrieval more stable, normalize vectors before returning:
         embs = F.normalize(embs, p=2, dim=-1)
+        #Because FAISS and most vector DBs expect NumPy.
         embs = embs.detach().cpu().numpy()
         return embs
 
